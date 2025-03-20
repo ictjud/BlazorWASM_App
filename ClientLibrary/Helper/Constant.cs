@@ -1,4 +1,4 @@
-﻿namespace ClientLibrary.Models.Helper
+﻿namespace ClientLibrary.Helper
 {
     public static class Constant
     {

@@ -1,8 +1,8 @@
 ﻿using NetcodeHub.Packages.WebAssembly.Storage.Cookie;
 
-namespace ClientLibrary.Models.Helper
+namespace ClientLibrary.Helper
 {
-    public class TokenService (IBrowserCookieStorageService cookieStorageService) : ITokenService
+    public class TokenService(IBrowserCookieStorageService cookieStorageService) : ITokenService
     {
         public string FormToken(string jwt, string refresh)
         {
@@ -40,7 +40,7 @@ namespace ClientLibrary.Models.Helper
 
         public async Task SetCookie(string key, string value, int days, string path)
         {
-            await cookieStorageService.SetAsync(key,value,days, path);
+            await cookieStorageService.SetAsync(key, value, days, path);
         }
     }
 }
