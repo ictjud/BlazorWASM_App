@@ -38,7 +38,7 @@ namespace ClientLibrary.Helper
 
         public async Task<TResponse> GetServiceResponse<TResponse>(HttpResponseMessage message)
         {
-            var response = await message.Content.ReadFromJsonAsync<TResponse>()!
+            var response = await message.Content.ReadFromJsonAsync<TResponse>();
             return response!;
         }
     }
